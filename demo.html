@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Age Calculator</title>
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: rgb(62, 63, 63);
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+        border-radius: 12px;
+        border-color: black;
+    }
+</style>
+
+
+<body>
+
+    <h1>Pet Age Calculator</h1>
+
+    <label for="petAge">Enter your pet's age in human years:</label>
+    <br>
+    <input type="number" id="petAge" placeholder="Enter age" required>
+    <br>
+    <button onclick="calculateAge()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateAge() {
+
+            var petAgeInHumanYears = document.getElementById("petAge").value;
+            var petAgeInCatYears = petAgeInHumanYears * 7;
+            var resultElement = document.getElementById("result");
+            resultElement.innerHTML = "Your kitty is " + petAgeInCatYears + " years old in cat years.";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Age Calculator</title>
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+        background-color: rgb(62, 63, 63);
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+        border-radius: 12px;
+        border-color: black;
+    }
+</style>
+
+
+<body>
+
+    <h1>Pet Age Calculator</h1>
+
+    <label for="cupsofcoffe">Enter your cofee you consumed:</label>
+    <br>
+    <input type="number" id="cupsofcoffe" placeholder="Enter coffe consumed" required>
+    <br>
+    <label for="desired">Enter your cofee you desired:</label>
+    <br>
+    <input type="number" id="desired" placeholder="Enter coffe desired" required>
+    <br>
+    <button onclick="calculatecofee()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculatecoffe() {
+
+            var cupsofcoffe = document.getElementById("cupsofcoffe").value;
+            var desiredcoffe = document.getElementById("desired").value;
+            resultElement.innerHTML = "Your consumed coffee is " + cupofcoffe;
+        }
+    </script>
+
+</body>
+
+</html>
